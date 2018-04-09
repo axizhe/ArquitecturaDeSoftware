@@ -247,11 +247,19 @@ class Menu{
 		void EscribirMenu();
 		char entrada();
 	private:
+		char caracter;
 	protected:
 };
 
 Menu::Menu(){
-	cout << "Menu Opcion: 1" << endl;
+	cout << "Menu Opcion: 1: Imprimir Figuras" << endl;
+	cout << "Menu Opcion: 2: Añadir Rectangulo" << endl;
+	cout << "Menu Opcion: 3: Añadir Triangulo" << endl;
+	cout << "Menu Opcion: 4: Añadir Circulo" << endl;
+	cout << "Menu Opcion: 5: Eliminar figura" << endl;
+	char aux;
+	cin >> aux;
+	this->caracter=aux;
 }
 
 char Menu::entrada(){
