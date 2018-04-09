@@ -194,7 +194,7 @@ class Gestor : public figura{
 		void trasladar_y(int id, int y);
 		
 	private:
-		figura *figuras[5];
+		figura figuras[5];
 		int id;
 };
 
@@ -238,6 +238,24 @@ void Gestor::trasladar_y(int id, int y){
 }
 
 //Clase del menu
+
+class Menu{
+	public:
+		Menu();
+		virtual ~Menu();
+		
+		void EscribirMenu();
+		char entrada();
+	private:
+	protected:
+};
+
+Menu::Menu(){
+	cout << "Menu Opcion: 1" << endl;
+}
+
+char Menu::entrada(){
+}
 
 //Principal del codigo
 
